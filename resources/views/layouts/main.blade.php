@@ -42,6 +42,8 @@
     @yield('content')
     @livewireScripts
 
+    <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.js"></script>
+
     @yield('scripts')
 </body>
 

@@ -60,8 +60,6 @@
 
 @section('scripts')
 
-    <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.js"></script>
-
     <script>
         var elem = document.querySelector('.grid');
         var infScroll = new InfiniteScroll(elem, {
