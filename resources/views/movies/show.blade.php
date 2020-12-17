@@ -92,8 +92,8 @@
                     @foreach ($movie['cast'] as $cast)
                         <div class="mt-8">
                             <a href="{{ route('actors.show', $cast['id']) }}">
-                                <img src="https://image.tmdb.org/t/p/w300{{ $cast['profile_path'] }}"
-                                    alt="{{ $cast['name'] }}" class="hover:opacity-75 transition ease-in-out duration-150">
+                                <img src="{{ $cast['profile_path'] }}" alt="{{ $cast['name'] }}"
+                                    class="hover:opacity-75 transition ease-in-out duration-150">
                             </a>
                             <div class="mt-2">
                                 <a href="{{ route('actors.show', $cast['id']) }}"
@@ -118,9 +118,9 @@
                     @foreach ($movie['images'] as $image)
                         <div class="mt-8">
                             <a @click.prevent="
-                                                                                                                                        isOpen = true
-                                                                                                                                        image='{{ 'https://image.tmdb.org/t/p/original/' . $image['file_path'] }}'
-                                                                                                                                    "
+                                                                                                                                            isOpen = true
+                                                                                                                                            image='{{ 'https://image.tmdb.org/t/p/original/' . $image['file_path'] }}'
+                                                                                                                                        "
                                 href="#">
                                 <img src="https://image.tmdb.org/t/p/w500{{ $image['file_path'] }}" alt="parasite"
                                     class="hover:opacity-75 transition ease-in-out duration-150">

@@ -1,7 +1,7 @@
-<div class="movie mt-8">
+<div class="movie mt-8 transform hover:scale-110 motion-reduce:transform-none">
     <a href="{{ route('movies.show', $movie['id']) }}">
         <img src="{{ $movie['poster_path'] }}" alt="parasite"
-            class="hover:opacity-75 transition ease-in-out duration-150">
+            class="hover:opacity-75 transition ease-in-out duration-150 rounded-lg">
     </a>
     <div class="mt-2">
         <a href="{{ route('movies.show', $movie['id']) }}"
