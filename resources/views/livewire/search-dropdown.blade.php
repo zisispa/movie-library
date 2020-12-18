@@ -1,7 +1,7 @@
 <div class="relative mt-3 md:mt-0" x-data="{ isOpen: true }" @click.away="isOpen = false">
     <input wire:model.debounce.500="search" type="text" @focus="isOpen = true" @keydown.escape.window="isOpen = false"
         @keydown.shift.tab="isOpen = false" @keydown="isOpen = true"
-        class="bg-gray-800 rounded-full text-sm w-64 px-4 pl-8 py-1 focus:outline-none focus:shadow-outline"
+        class="bg-gray-300 rounded-full text-sm w-64 px-4 pl-8 py-1 focus:outline-none focus:shadow-outline text-gray-900"
         placeholder="Search" x-ref="search" @keydown.window="
             if(event.keyCode === 191) {
                 event.preventDefault();
@@ -15,7 +15,7 @@
         </svg>
     </div>
 
-    <div wire:loading class="spinner top-0 right-0 reight-0 mr-4 mt-3"></div>
+    <div wire:loading class="spinner top-0 right-0 reight-0 mr-4 mt-3 bg-gray-900"></div>
 
     @if (strlen($search) > 2)
         <div class="z-50 absolute bg-gray-800 text-sm rounded w-64 mt-4" x-show.transition.opacity="isOpen">

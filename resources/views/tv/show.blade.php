@@ -1,5 +1,9 @@
 @extends('layouts.main')
 
+@section('title')
+    MovieLab - {{ $tvshow['name'] }}
+@endsection
+
 @section('content')
     <div class="tv-info border-b border-gray-800">
         <div class="container mx-auto px-4 py-16 flex flex-col md:flex-row">
@@ -117,9 +121,9 @@
                     @foreach ($tvshow['images'] as $image)
                         <div class="mt-8">
                             <a @click.prevent="
-                                        isOpen = true
-                                        image='{{ 'https://image.tmdb.org/t/p/original/' . $image['file_path'] }}'
-                                    " href="#">
+                                            isOpen = true
+                                            image='{{ 'https://image.tmdb.org/t/p/original/' . $image['file_path'] }}'
+                                        " href="#">
                                 <img src="{{ 'https://image.tmdb.org/t/p/w500/' . $image['file_path'] }}" alt="image1"
                                     class="hover:opacity-75 transition ease-in-out duration-150">
                             </a>

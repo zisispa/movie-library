@@ -1,5 +1,9 @@
 @extends('layouts.main')
 
+@section('title')
+    MovieLab - Actors
+@endsection
+
 @section('content')
 
     {{-- Popular Actors Sesction --}}

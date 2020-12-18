@@ -1,5 +1,9 @@
 @extends('layouts.main')
 
+@section('title')
+    MovieLab - {{ $actor['name'] }}
+@endsection
+
 @section('content')
     <div class="movie-info border-b border-gray-800">
         <div class="container mx-auto px-4 py-16 flex flex-col md:flex-row">

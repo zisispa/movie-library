@@ -1,5 +1,9 @@
 @extends('layouts.main')
 
+@section('title')
+    MovieLab - Movies
+@endsection
+
 @section('content')
 
     {{-- Popular Movies Sesction --}}
