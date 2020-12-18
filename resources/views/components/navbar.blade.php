@@ -49,7 +49,7 @@
                 </div>
 
                 <!-- Profile dropdown -->
-                <div class="ml-3 relative" x-data="{ isOpen: false }">
+                {{-- <div class="ml-3 relative" x-data="{ isOpen: false }">
                     <div>
                         <button @click="isOpen = !isOpen" @click.away="isOpen = false"
                             class="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
@@ -74,7 +74,7 @@
                         </div>
                     </template>
 
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>
