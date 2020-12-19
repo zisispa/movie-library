@@ -12,6 +12,7 @@ This project is implemented with the following technologies:
 -   [Livewire](https://laravel-livewire.com/).
 -   [Tailwindcss](https://tailwindcss.com/).
 -   [Alpine.js](https://github.com/alpinejs/alpine).
+-   [API - themoviedb](https://www.themoviedb.org/).
 
 ## Live
 
