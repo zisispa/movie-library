@@ -1,4 +1,4 @@
-![screenshot](https://postimg.cc/wy0Ygn2X)
+![alt text](https://github.com/zisispa/movie-library-laravel/blob/master/movie-library.PNG?raw=true)
 
 ## About this Project
 
