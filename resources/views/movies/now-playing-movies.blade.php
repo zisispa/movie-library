@@ -1,5 +1,9 @@
 @extends('layouts.main')
 
+@section('title')
+    MovieLab - Now Playing Movies
+@endsection
+
 @section('content')
 
     {{-- Now Playing Section --}}
